@@ -179,7 +179,26 @@ svg {
   vertical-align: middle; }
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black;
+    position:relative;
+}
+
+div.value_input {
+  position: absolute;
+  bottom: 0;
+}
+
+div.value_input2 {
+  position:absolute;
+  bottom:0;
+}
 
 caption {
   padding-top: 0.75rem;
@@ -6429,4 +6448,3 @@ html, body {
     object-fit: cover;
     margin: 2px;
   }
-

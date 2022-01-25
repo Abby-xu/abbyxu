@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- Name: Rong Xu / UIN: 928009312-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <!-- CSS dependencies: used bootstrap template-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="normal.css">
+</head>
+
+<body class="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-info">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"><i class="fa d-inline fa-lg fa-bullseye"></i></a>
+        <input type="button" id="btn" class="navbar-toggler-icon">
+        <script>
+          console.log(document.styleSheets.length)
+          console.log(document.styleSheets[1].cssRules[830])
+          console.log(document.styleSheets[1].cssRules[824])
+          // bg-info: cssRules[830] -- rgb(142, 142, 142) <==> rgb(128, 123, 184)
+          // bg-primary: cssRules[824] -- rgb(205, 205, 205) <==> rgb(210, 223, 250)
+          var btn = document.getElementById("btn")
+          btn.onclick = function(){
+            var rule_info = document.styleSheets[1].cssRules[830]
+            var rule_prim = document.styleSheets[1].cssRules[824]
+            if (rule_info.style.backgroundColor=="rgb(142, 142, 142)") {
+              rule_info.style.backgroundColor="rgb(128, 123, 184)"
+            } else {
+              rule_info.style.backgroundColor="rgb(142, 142, 142)"
+            }
+            if (rule_prim.style.backgroundColor=="rgb(205, 205, 205)") {
+              rule_prim.style.backgroundColor="rgb(210, 223, 250)"
+            } else {
+              rule_prim.style.backgroundColor="rgb(205, 205, 205)"
+            }
+          }
+        </script>
+        <div class="collapse navbar-collapse text-center justify-content-between" id="navbar2SupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="../about.html">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link mx-2" href="./portfolio.html">Portfolio</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="../projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2" href="../resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2" href="../service.html">Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="h-40 d-flex align-items-center bg-info">
+      <div class="container">
+        <h5 class="display-4 text-white">CSCE656 Computers and New Media</h5>
+        <h4> Assignment #1 </h4>
+        <h3> click <a href="./assignment2.html"> 👉🏻 here 👈🏻 </a> to jump to the assignment #2</h3>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
+        <h3> Howdy!!!</h3>
+        <div class="row"> <h3> </h3> </div>
+        <div class="row">
+          <div class="">
+            <h4>
+              Hi, my name is Rong Xu, and I go by with Abby.
+              Currently I'm a Computer Science Junior from Texas A&M university with the minor of Cybersecurity and Math. 
+              Last summer I interned at Splunk as a Technical Marketing Intern. 
+              For this incoming summer I will be working at Amazon as Software Development Engineer Intern.
+              I'm familar with programing languages such as Python, C++, JavaScript. 
+              And I'm also used to work with Linux, AWS, and Ubuntu server. 
+              In my freshman year, I led a team of six engineering students with different majors to design and build a water vehicle and won the first place. 
+              This thing pushed me to participate different hackathons. 
+              During my sophomore year, my team won the best hardware hack in 2021 TAMUhack. 
+              For now, I'm one of the organizers of TAMU Datathon, which is a student organization holding annual data science hackathons.
+              Definitely check other tabs by clicking the bottons above. And welcome to connect me on
+              <a href="http://www.linkedin.com/in/abbyxu"> LinkedIn </a>.
+            </h4>  
+          </div>
+        </div>
+        <div class="row">
+          <div class="">
+            <h4>
+              I'm taking this course to learn more about how to create and evaluate the contents of different media. 
+              I usually spend my time on reading and watching videos, and I'm also a vlogger using videos to record my life.
+              It's interesting to analyze and have a better understanding of how things present. 
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="py-5">
+      <div class="container">
+        <!-- Gallery -->
+        <div class="images">
+          <!-- <img class="pic pic1" src="./images/1.jpg"> -->
+          <img class="pic pic2" src="../images/2.JPG">
+          <img class="pic pic3" src="../images/3.jpeg">
+          <img class="pic pic4" src="../images/4.jpg">
+          <img class="pic pic5" src="../images/5.JPG">
+          <img class="pic pic6" src="../images/6.JPG">
+          <img class="pic pic7" src="../images/7.jpg">
+          <img class="pic pic8" src="../images/9.JPG">
+          <!-- <img class="pic pic9" src="./images/8.JPG"> -->
+          <img class="pic pic9" src="../images/10.jpg">
+          <!-- <img class="pic pic9" src="./images/11.jpg"> -->
+        </div>  
+      </div>
+  </div>
+  <div class="py-5 bg-primary">
+      <div class="container">
+        <h3> The medias I used for learning </h3>
+        <div class="row">
+          <div class="">
+            <h5> For the first assignment, I would like to split the medias I used every week by different functions. </h5>  
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <h3> Summary </h3>
+      <div class="row">
+        <div class="">
+          <p>
+            For the second semester during my freshman year, I led a team of six engineering students to participate eSMART - 
+            "A semester-long, interdisciplinary competition, eSMART tasks student teams to utilize their innovation, creativity and communication skills to create, race and present a remote-controlled water vehicle."
+            During that competition, we designed and built a water vehicle. I was responsible for connecting EV3 controller to computer and writing a script for controling the boat.
+            Finally we got the first place and won $500.
+          </p>
+          <table>
+            <tr>
+              <th scope="row">Day</th>
+              <th>Today</th>
+              <th>Tomorrow</th>
+              <th>Thursday</th>
+            </tr>
+          
+            <tr>
+              <th>Condition</th>
+              <td>Sunny</td>
+              <td>Mostly sunny</td>
+              <td>Partly cloudy</td>
+            </tr>
+          
+            <tr>
+              <th>Temperature</th>
+              <td>19°C</td>
+              <td>17°C</td>
+              <td>12°C</td>
+            </tr>
+          </table>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+    <div class="bg-info p-4">
+      <div class="container">
+        <div class="row">
+            <div class="p-0 col-lg-5 col-md-6">
+                <img class="img-fluid" src="../images/Abby.jpg", width="60%", height="60%"> 
+            </div>
+            <div class="col-md-5 align-self-center p-4 offset-md-1">
+            <h4>Abby Xu</h4>
+            <p class="mb-4 text-primary">614 Holleman Dr.E, Rm 333 <br>College Station, TX 77840 <br> abby.xu915'at'gmail.com </p>
+            <div class="row text-center">
+              <div class="col-md-2 col-3">
+                <a href="https://www.facebook.com/abby.xu.33449" target="_blank"><i class="fa fa-facebook text-primary fa-2x"></i></a>
+              </div>
+              <div class="col-md-2 col-3">
+                <a href="http://www.linkedin.com/in/abbyxu" target="_blank"><i class="fa fa-linkedin text-primary fa-2x"></i></a>
+              </div>
+              <div class="col-md-2 col-3">
+                <a href="https://www.instagram.com/abby.xu_/" target="_blank"><i class="fa fa-instagram text-primary fa-2x"></i></a>
+              </div>
+              <div class="col-md-2 col-3">
+                <a href="https://github.com/Abby-xu" target="_blank"><i class="fa text-primary fa-2x fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark py-3">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+<!--           <div class="col-lg-4 col-md-6">
+            <p class="text-secondary mb-0">Used for TAMU CSCE-315 Project 1</p>
+          </div> -->
+          <div class="col-lg-4 col-md-6">
+            <p class="text-secondary mb-0">2021 - Rong(Abby) Xu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

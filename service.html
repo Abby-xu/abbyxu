@@ -1,101 +1,173 @@
 <!DOCTYPE html>
 <!-- Name: Rong Xu / UIN: 928009312-->
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Service</title>
-    <!-- CSS dependencies: used bootstrap template-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="normal.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service</title>
+  <!-- CSS dependencies: used bootstrap template-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="normal.css">
 </head>
 
 <body class="">
-    <nav class="navbar navbar-expand-md navbar-dark bg-info">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html"><i class="fa d-inline fa-lg fa-bullseye"></i></a>
-        <input type="button" id="btn" class="navbar-toggler-icon">
-        <script>
-          console.log(document.styleSheets.length)
-          console.log(document.styleSheets[1].cssRules[830])
-          console.log(document.styleSheets[1].cssRules[824])
-          // bg-info: cssRules[830] -- rgb(142, 142, 142) <==> rgb(128, 123, 184)
-          // bg-primary: cssRules[824] -- rgb(205, 205, 205) <==> rgb(210, 223, 250)
-          var btn = document.getElementById("btn")
-          btn.onclick = function(){
-            var rule_info = document.styleSheets[1].cssRules[830]
-            var rule_prim = document.styleSheets[1].cssRules[824]
-            if (rule_info.style.backgroundColor=="rgb(142, 142, 142)") {
-              rule_info.style.backgroundColor="rgb(128, 123, 184)"
-            } else {
-              rule_info.style.backgroundColor="rgb(142, 142, 142)"
-            }
-            if (rule_prim.style.backgroundColor=="rgb(205, 205, 205)") {
-              rule_prim.style.backgroundColor="rgb(210, 223, 250)"
-            } else {
-              rule_prim.style.backgroundColor="rgb(205, 205, 205)"
-            }
+  <nav class="navbar navbar-expand-md navbar-dark bg-info">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html"><i class="fa d-inline fa-lg fa-bullseye"></i></a>
+      <input type="button" id="btn" class="navbar-toggler-icon">
+      <script>
+        console.log(document.styleSheets.length)
+        console.log(document.styleSheets[1].cssRules[830])
+        console.log(document.styleSheets[1].cssRules[824])
+        // bg-info: cssRules[830] -- rgb(142, 142, 142) <==> rgb(128, 123, 184)
+        // bg-primary: cssRules[824] -- rgb(205, 205, 205) <==> rgb(210, 223, 250)
+        var btn = document.getElementById("btn")
+        btn.onclick = function () {
+          var rule_info = document.styleSheets[1].cssRules[830]
+          var rule_prim = document.styleSheets[1].cssRules[824]
+          if (rule_info.style.backgroundColor == "rgb(142, 142, 142)") {
+            rule_info.style.backgroundColor = "rgb(128, 123, 184)"
+          } else {
+            rule_info.style.backgroundColor = "rgb(142, 142, 142)"
           }
-        </script>
-        <div class="collapse navbar-collapse text-center justify-content-between" id="navbar2SupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="./about.html">About</a>
-            </li>
-            <!-- <li class="nav-item">
+          if (rule_prim.style.backgroundColor == "rgb(205, 205, 205)") {
+            rule_prim.style.backgroundColor = "rgb(210, 223, 250)"
+          } else {
+            rule_prim.style.backgroundColor = "rgb(205, 205, 205)"
+          }
+        }
+      </script>
+      <div class="collapse navbar-collapse text-center justify-content-between" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="./about.html">About</a>
+          </li>
+          <!-- <li class="nav-item">
               <a class="nav-link mx-2" href="./portfolio.html">Portfolio</a>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="./projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-2" href="./resume.html">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-2" href="./service.html">Service</a>
-            </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="./resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="./service.html">Service</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="text-center mx-auto p-4 bg-secondary col-lg-6 col-md-10">
+          <h2 class="text-white">Student Organizations</h2>
+          <p class="text-light">During my junior and senior year, I participated several student organizations to get to
+            know more people with same interests.</p>
         </div>
       </div>
-    </nav>
-    <div class="py-5">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="text-center mx-auto p-4 bg-secondary col-lg-6 col-md-10">
-            <h2 class="text-white">Volunteer experience</h2>
-            <p class="text-light">During my freshamn and sophomore year, I participated several volunteer events for helping others who need us.</p>
-          </div>
-        </div>
-        <div class="py-5">
-          <div class="container">
-            <div class="row">
-              <div class="p-4 col-lg-4 col-md-8">
-                  
-                <h4><b>Galveston Freshman Leadership Organization (GFLO)</b></h4>
-                <p>
-                    During 2020 spring, I was selected as a volunteer to provide assistance for community activity “Galveston Lone Star Motorcycle Rally”. 
-                    In that activity, we directed visitors to the destination they wanted.
-                </p>
-                
-              </div>
-              <div class="p-4 col-lg-4 col-md-8">
-                <h4><b>Peer Notetaker for Disability Resources</b></h4>
-                <p>
-                  I was a peer notetaker for the courses CSCE222 and CSCE314, demonstrated respect, selfless service, and leadership as a volunteer peer notetaker by providing an accessible and inclusive learning environment
-                </p>
-              </div>
-              <div class="p-4 col-lg-4 col-md-8">
-                <h4><b>Student Volunteer for MRI/EEG tests</b></h4>
-                <p>
-                    Since I did related research with Neurotechnology, I signed up when I heared there is a opportunity to be the participant.
-                    The purpose of this study is to test the ability to switch between performing different tasks. 
-                    I'm responsible for recording brain activity with electroencephalography (EEG) and fMRI scan, and complete the cognitive task during EEG and MRI.
-                </p>
-              </div>
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="p-4 col-lg-4 col-md-8">
+              <h4><b>TAMU Datathon</b></h4>
+              <p>
+                I joined TAMU Datathon as one of the design team since 2021 Spring. I was the Design Lead from 2022
+                Spring to 2023 Fall.
+                I'm responsible for designing the website and merch for TAMU Datathon. I appreciated this great place to
+                meet my best friends during my college life.
+                Shout out to TAMU DATATHON!!!
+              </p>
+            </div>
+
+            <div class="p-4 col-lg-4 col-md-8">
+              <h4><b>Texas A&M Cybersecurity Club</b></h4>
+              <p>
+                Since 2021 Fall, I joined Texas A&M Cybersecurity Club as one of members.
+                I'm also a member of the TAMU Women in Cybersecurity (WiCys) chapter. After my internship at Splunk
+                working on
+                security related project. I was invited and shared my inernship experience with other WiCys members.
+              </p>
+            </div>
+
+            <div class="p-4 col-lg-4 col-md-8">
+              <h4><b>TAMU Taekwondo Team</b></h4>
+              <p>
+                I joined TAMU Taekwondo Team since 2022 Fall. I'm a member of the sparring team.
+                In 2023 Spring, I was one of the team members who participated in the 2023 National Collegiate Taekwondo
+                Association (NCTA) National Championships.
+                I will continue to practice and participate in the NCTA competition in 2024 Spring.
+              </p>
             </div>
           </div>
         </div>
-              <!-- Gallery -->
+      </div>
+      <!-- Gallery -->
+      <div class="images">
+        <img class="pic se1" src="./images/org/6.jpg">
+        <img class="pic se1" src="./images/org/13.png">
+        <img class="pic se3" src="./images/org/3.JPG">
+        <img class="pic se6" src="./images/org/12.jpg">
+        <img class="pic se4" src="./images/org/4.jpg">
+        <img class="pic se6" src="./images/org/1.png">
+        <img class="pic se5" src="./images/org/5.JPEG">
+        <img class="pic se1" src="./images/org/7.png">
+        <img class="pic se2" src="./images/org/8.JPEG">
+        <img class="pic se3" src="./images/org/9.jpg">
+        <img class="pic se4" src="./images/org/10.png">
+        <img class="pic se5" src="./images/org/11.jpg">
+        <!-- <img class="pic se2" src="./images/org/2.jpg"> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="text-center mx-auto p-4 bg-secondary col-lg-6 col-md-10">
+          <h2 class="text-white">Volunteer experience</h2>
+          <p class="text-light">During my freshman and sophomore year, I participated several volunteer events for
+            helping others who need us.</p>
+        </div>
+      </div>
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="p-4 col-lg-4 col-md-8">
+
+              <h4><b>Galveston Freshman Leadership Organization (GFLO)</b></h4>
+              <p>
+                During 2020 spring, I was selected as a volunteer to provide assistance for community activity
+                “Galveston Lone Star Motorcycle Rally”.
+                In that activity, we directed visitors to the destination they wanted.
+              </p>
+
+            </div>
+            <div class="p-4 col-lg-4 col-md-8">
+              <h4><b>Peer Notetaker for Disability Resources</b></h4>
+              <p>
+                I was a peer notetaker for the courses CSCE222 and CSCE314, demonstrated respect, selfless service, and
+                leadership as a volunteer peer notetaker by providing an accessible and inclusive learning environment
+              </p>
+            </div>
+            <div class="p-4 col-lg-4 col-md-8">
+              <h4><b>Student Volunteer for MRI/EEG tests</b></h4>
+              <p>
+                Since I did related research with Neurotechnology, I signed up when I heared there is a opportunity to
+                be the participant.
+                The purpose of this study is to test the ability to switch between performing different tasks.
+                I'm responsible for recording brain activity with electroencephalography (EEG) and fMRI scan, and
+                complete the cognitive task during EEG and MRI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gallery -->
       <div class="images">
         <img class="pic se1" src="./images/se7.JPG">
         <img class="pic se2" src="./images/se2.jpg">
@@ -103,48 +175,52 @@
         <img class="pic se4" src="./images/se4.jpg">
         <img class="pic se5" src="./images/se5.JPG">
         <img class="pic se6" src="./images/se6.jpg">
-      </div>  
-        </div>
       </div>
     </div>
-    <div class="bg-info p-4">
-      <div class="container">
-        <div class="row">
-            <div class="p-0 col-lg-5 col-md-6">
-                <img class="img-fluid" src="./images/Abby.jpg", width="60%", height="60%"> 
+  </div>
+
+  <div class="bg-info p-4">
+    <div class="container">
+      <div class="row">
+        <div class="p-0 col-lg-5 col-md-6">
+          <img class="img-fluid" src="./images/Abby.jpg" , width="60%" , height="60%">
+        </div>
+        <div class="col-md-5 align-self-center p-4 offset-md-1">
+          <h4>Abby Xu</h4>
+          <p class="mb-4 text-primary">614 Holleman Dr.E, Rm 333 <br>College Station, TX 77840 <br>
+            abby.xu915'at'gmail.com </p>
+          <div class="row text-center">
+            <div class="col-md-2 col-3">
+              <a href="https://www.facebook.com/abby.xu.33449" target="_blank"><i
+                  class="fa fa-facebook text-primary fa-2x"></i></a>
             </div>
-            <div class="col-md-5 align-self-center p-4 offset-md-1">
-            <h4>Abby Xu</h4>
-            <p class="mb-4 text-primary">614 Holleman Dr.E, Rm 333 <br>College Station, TX 77840 <br> abby.xu915'at'gmail.com </p>
-            <div class="row text-center">
-              <div class="col-md-2 col-3">
-                <a href="https://www.facebook.com/abby.xu.33449" target="_blank"><i class="fa fa-facebook text-primary fa-2x"></i></a>
-              </div>
-              <div class="col-md-2 col-3">
-                <a href="http://www.linkedin.com/in/abbyxu" target="_blank"><i class="fa fa-linkedin text-primary fa-2x"></i></a>
-              </div>
-              <div class="col-md-2 col-3">
-                <a href="https://www.instagram.com/abby.xu_/" target="_blank"><i class="fa fa-instagram text-primary fa-2x"></i></a>
-              </div>
-              <div class="col-md-2 col-3">
-                <a href="https://github.com/Abby-xu" target="_blank"><i class="fa text-primary fa-2x fa-github"></i></a>
-              </div>
+            <div class="col-md-2 col-3">
+              <a href="http://www.linkedin.com/in/abbyxu" target="_blank"><i
+                  class="fa fa-linkedin text-primary fa-2x"></i></a>
+            </div>
+            <div class="col-md-2 col-3">
+              <a href="https://www.instagram.com/abby.xu_/" target="_blank"><i
+                  class="fa fa-instagram text-primary fa-2x"></i></a>
+            </div>
+            <div class="col-md-2 col-3">
+              <a href="https://github.com/Abby-xu" target="_blank"><i class="fa text-primary fa-2x fa-github"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-dark py-3">
-      <div class="container">
-        <div class="row d-flex justify-content-between">
-<!--           <div class="col-lg-4 col-md-6">
+  </div>
+  <div class="bg-dark py-3">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <!--           <div class="col-lg-4 col-md-6">
             <p class="text-secondary mb-0">Used for TAMU CSCE-315 Project 1</p>
           </div> -->
-          <div class="col-lg-4 col-md-6">
-            <p class="text-secondary mb-0">2021 - Rong(Abby) Xu</p>
-          </div>
+        <div class="col-lg-4 col-md-6">
+          <p class="text-secondary mb-0">2023 - Rong(Abby) Xu</p>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
